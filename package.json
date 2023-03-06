@@ -1,5 +1,5 @@
 {
-  "name": "todolist",
+  "name": "webpack-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rasmus-eklund/todolist.git"
+    "url": "git+https://github.com/rasmus-eklund/webpack-boilerplate.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rasmus-eklund/todolist/issues"
+    "url": "https://github.com/rasmus-eklund/webpack-boilerplate/issues"
   },
-  "homepage": "https://github.com/rasmus-eklund/todolist#readme",
+  "homepage": "https://github.com/rasmus-eklund/webpack-boilerplate#readme",
   "devDependencies": {
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.0",

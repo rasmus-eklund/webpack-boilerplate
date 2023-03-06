@@ -1,16 +1,15 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
     entry: {
-        bundle: path.resolve(__dirname, 'src/index.js')
+        bundle: path.resolve(__dirname, 'src/index.js'),
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].js',
         clean: true,
-        assetModuleFilename: '[name][ext]',
     },
     devtool: 'source-map',
     devServer: {
@@ -20,24 +19,22 @@ module.exports = {
         port: 3000,
         open: true,
         hot: true,
-        compress: true,
+        compress: true
     },
     module: {
         rules: [
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
-            },
-            {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: 'asset/resource'
             }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'todolist',
+            title: "Title",
             filename: 'index.html',
-        })
+            template: 'src/template.html'
+        }),
     ]
+
 }
